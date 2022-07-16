@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e92bc9f39f.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/aossettings.js" defer></script>
+    <script src="./dist/app.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <h1 data-aos="fade-up" class="header__title titles">RecipeApp</h1>
+            <p data-aos="fade-up" class="header__desc titles">Lorem ipsum dolor sit amet.</p>
+            <div data-aos="fade-up" class="header__text-block">
+                <input type="text" class="header__text-block-input" placeholder="Enter meal name ...">
+                <button class="header__text-block-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="select-recipe wrapper">
+    </div>
+    <div class="img-block wrapper"></div>
+    <div class="result-block"></div>
+    <div class="footer">
+        <p><span class="footer__year"></span> | RecipeApp</p>
+        <p>Made by using <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular API</a></p>
+    </div>
+</body>
+</html>

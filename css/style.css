@@ -1,0 +1,299 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: #A4161A;
+}
+
+.wrapper {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.header .titles {
+  color: #F5F3F4;
+  text-shadow: 1px 1px 5px #0B090A;
+  text-align: center;
+}
+.header__title {
+  padding-top: 2em;
+  font-size: 4rem;
+}
+.header__desc {
+  padding-bottom: 2em;
+  font-size: 2rem;
+}
+.header__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10em;
+}
+.header__text-block-input {
+  width: 90%;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #b1b1b1;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+}
+.header__text-block-btn {
+  padding: 0.7em;
+  font-size: 1.5rem;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #b1b1b1;
+  color: #D3D3D3;
+  background-color: #0B090A;
+  cursor: pointer;
+}
+.header__text-block-btn i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.header__text-block-btn:hover i {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.select-recipe__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em 0 0;
+  margin-bottom: 1.5em;
+  border: 2px solid #b1b1b1;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  overflow: hidden;
+}
+.select-recipe__option img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-right: 2px solid #b1b1b1;
+}
+.select-recipe__option-desc {
+  padding-left: 2em;
+}
+.select-recipe__option-desc h3 {
+  font-size: 2.5rem;
+}
+.select-recipe__option:hover {
+  border: 2px solid #E5383B;
+}
+.select-recipe .recipe-error {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #D3D3D3;
+}
+.select-recipe .recipe-error span {
+  font-weight: bold;
+}
+
+.img-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image {
+  margin: 0 0 3em;
+  max-height: auto;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid #F5F3F4;
+  -webkit-box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-desc {
+  margin: 0 0 5em;
+  font-size: 2rem;
+  color: #D3D3D3;
+}
+
+.ingredients {
+  padding: 3em;
+  background-color: #D3D3D3;
+}
+.ingredients__title {
+  font-size: 3.5rem;
+  padding-bottom: 0.5em;
+}
+.ingredients li {
+  font-size: 1.8rem;
+  list-style: square;
+}
+
+.recipe {
+  padding: 3em;
+  background-color: #F5F3F4;
+}
+.recipe__title {
+  font-size: 3.5rem;
+  padding-bottom: 0.5em;
+}
+.recipe__desc {
+  font-size: 1.8rem;
+}
+
+.footer {
+  padding: 0.5em 0;
+  margin-top: auto;
+  color: #D3D3D3;
+  background-color: #0B090A;
+}
+.footer p {
+  overflow-x: hidden;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer a {
+  color: #D3D3D3;
+}
+
+@media only screen and (min-width: 576px) {
+  .header__title {
+    font-size: 5rem;
+  }
+  .header__text-block-input {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header__text-block-input {
+    width: 80%;
+  }
+
+  .select-recipe__option img {
+    width: 150px;
+    height: 150px;
+  }
+  .select-recipe__option-desc h3 {
+    font-size: 3rem;
+  }
+  .select-recipe__option-desc p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__text-block-input {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header__text-block-input {
+    width: 60%;
+  }
+}
+.empty-input {
+  -webkit-animation: 0.5s emptyInput;
+          animation: 0.5s emptyInput;
+}
+.empty-input input {
+  background-color: #ffbbaf;
+}
+
+@-webkit-keyframes emptyInput {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+  40% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  50% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+  60% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  80% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes emptyInput {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+  40% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  50% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+  60% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  80% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}/*# sourceMappingURL=style.css.map */
